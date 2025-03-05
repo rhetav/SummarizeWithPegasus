@@ -158,3 +158,19 @@ Traceback (most recent call last):
   File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/venv/lib/python3.10/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
 RuntimeError: MPS backend out of memory (MPS allocated: 7.45 GB, other allocations: 10.32 GB, max allowed: 18.13 GB). Tried to allocate 375.40 MB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+[2025-03-04 21:34:55,275: INFO: server: Started server process [45385]]
+[2025-03-04 21:34:55,275: INFO: on: Waiting for application startup.]
+[2025-03-04 21:34:55,275: INFO: on: Application startup complete.]
+[2025-03-04 21:34:55,276: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2025-03-04 21:35:16,316: INFO: server: Shutting down]
+[2025-03-04 21:35:16,418: INFO: on: Waiting for application shutdown.]
+[2025-03-04 21:35:16,419: INFO: on: Application shutdown complete.]
+[2025-03-04 21:35:16,419: INFO: server: Finished server process [45385]]
+[2025-03-04 21:36:13,505: INFO: server: Started server process [45416]]
+[2025-03-04 21:36:13,506: INFO: on: Waiting for application startup.]
+[2025-03-04 21:36:13,506: INFO: on: Application startup complete.]
+[2025-03-04 21:36:13,506: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2025-03-04 21:37:59,004: INFO: server: Shutting down]
+[2025-03-04 21:37:59,107: INFO: on: Waiting for application shutdown.]
+[2025-03-04 21:37:59,108: INFO: on: Application shutdown complete.]
+[2025-03-04 21:37:59,108: INFO: server: Finished server process [45416]]

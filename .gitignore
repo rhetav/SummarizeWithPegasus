@@ -1,3 +1,4 @@
 venv/
 artifacts/
 logs/
+.DS_Store
