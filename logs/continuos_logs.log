@@ -1,0 +1,16 @@
+[2025-03-04 15:43:45,212: INFO: main: logging is implemented]
+[2025-03-04 18:56:51,626: INFO: main: logging is implemented]
+[2025-03-04 18:56:51,626: INFO: main: stage Data Ingestion Stage started]
+[2025-03-04 18:56:51,626: ERROR: main: DataIngestionTrainingPipeline.initiate_data_ingestion() missing 1 required positional argument: 'self']
+Traceback (most recent call last):
+  File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/main.py", line 11, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+TypeError: DataIngestionTrainingPipeline.initiate_data_ingestion() missing 1 required positional argument: 'self'
+[2025-03-04 18:58:16,613: INFO: main: logging is implemented]
+[2025-03-04 18:58:16,614: INFO: main: stage Data Ingestion Stage started]
+[2025-03-04 18:58:16,615: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-03-04 18:58:16,615: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-04 18:58:16,615: INFO: common: created directory at: artifacts]
+[2025-03-04 18:58:16,615: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-04 18:58:18,132: INFO: data_ingestion: File downloaded]
+[2025-03-04 18:58:18,221: INFO: main: stage Data Ingestion Stage finished]
