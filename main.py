@@ -1,6 +1,8 @@
 from src.SummarizeWithPegasus.logging import logger
 from src.SummarizeWithPegasus.pipeline.data_ingestion import DataIngestionTrainingPipeline
 from src.SummarizeWithPegasus.pipeline.data_transformation import DataTransformationTrainingPipeline
+from src.SummarizeWithPegasus.pipeline.data_transformation import DataTransformationTrainingPipeline
+from src.SummarizeWithPegasus.pipeline.model_trainer import ModelTrainerTrainingPipeline
 
 logger.info("logging is implemented")
 
@@ -22,6 +24,17 @@ try:
     logger.info(f'stage {STAGE_NAME} started')
     data_transformation_pipeline = DataTransformationTrainingPipeline()
     data_transformation_pipeline.initiate_data_transformation()
+    logger.info(f'stage {STAGE_NAME} finished')
+except Exception as e:
+    logger.exception(e)
+    raise e
+
+STAGE_NAME = 'Model Training Stage'
+
+try:
+    logger.info(f'stage {STAGE_NAME} started')
+    model_trainer_pipeline = ModelTrainerTrainingPipeline()
+    model_trainer_pipeline.initiate_model_trainer()
     logger.info(f'stage {STAGE_NAME} finished')
 except Exception as e:
     logger.exception(e)

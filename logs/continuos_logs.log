@@ -29,3 +29,132 @@ TypeError: DataIngestionTrainingPipeline.initiate_data_ingestion() missing 1 req
 [2025-03-04 19:46:46,119: INFO: common: created directory at: artifacts]
 [2025-03-04 19:46:46,119: INFO: common: created directory at: artifacts/data_transformation]
 [2025-03-04 19:46:48,765: INFO: main: stage Data Transformation Stage finished]
+[2025-03-04 20:03:44,828: INFO: config: PyTorch version 2.6.0 available.]
+[2025-03-04 20:03:45,038: INFO: main: logging is implemented]
+[2025-03-04 20:03:45,038: INFO: main: stage Data Ingestion Stage started]
+[2025-03-04 20:03:45,039: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-03-04 20:03:45,040: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-04 20:03:45,040: INFO: common: created directory at: artifacts]
+[2025-03-04 20:03:45,040: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-04 20:03:45,040: INFO: data_ingestion: File already exits]
+[2025-03-04 20:03:45,101: INFO: main: stage Data Ingestion Stage finished]
+[2025-03-04 20:03:45,101: INFO: main: stage Data Transformation Stage started]
+[2025-03-04 20:03:45,102: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-03-04 20:03:45,102: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-04 20:03:45,102: INFO: common: created directory at: artifacts]
+[2025-03-04 20:03:45,102: INFO: common: created directory at: artifacts/data_transformation]
+[2025-03-04 20:03:45,917: INFO: main: stage Data Transformation Stage finished]
+[2025-03-04 20:03:45,917: INFO: main: stage Model Training Stage started]
+[2025-03-04 20:03:45,918: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-03-04 20:03:45,918: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-04 20:03:45,918: INFO: common: created directory at: artifacts]
+[2025-03-04 20:03:45,919: ERROR: main: 'ConfigurationManager' object has no attribute 'params']
+Traceback (most recent call last):
+  File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/main.py", line 37, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/src/SummarizeWithPegasus/pipeline/model_trainer.py", line 10, in initiate_model_trainer
+    model_trainer_config = config.get_model_trainer_config()
+  File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/src/SummarizeWithPegasus/config/configuration.py", line 44, in get_model_trainer_config
+    params=self.params.TrainingArguments
+AttributeError: 'ConfigurationManager' object has no attribute 'params'
+[2025-03-04 20:04:34,375: INFO: config: PyTorch version 2.6.0 available.]
+[2025-03-04 20:04:34,472: INFO: main: logging is implemented]
+[2025-03-04 20:04:34,472: INFO: main: stage Data Ingestion Stage started]
+[2025-03-04 20:04:34,473: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-03-04 20:04:34,473: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-04 20:04:34,473: INFO: common: created directory at: artifacts]
+[2025-03-04 20:04:34,473: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-04 20:04:34,473: INFO: data_ingestion: File already exits]
+[2025-03-04 20:04:34,529: INFO: main: stage Data Ingestion Stage finished]
+[2025-03-04 20:04:34,529: INFO: main: stage Data Transformation Stage started]
+[2025-03-04 20:04:34,530: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-03-04 20:04:34,530: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-04 20:04:34,530: INFO: common: created directory at: artifacts]
+[2025-03-04 20:04:34,530: INFO: common: created directory at: artifacts/data_transformation]
+[2025-03-04 20:04:35,097: INFO: main: stage Data Transformation Stage finished]
+[2025-03-04 20:04:35,097: INFO: main: stage Model Training Stage started]
+[2025-03-04 20:04:35,098: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-03-04 20:04:35,099: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-04 20:04:35,099: INFO: common: created directory at: artifacts]
+[2025-03-04 20:04:35,099: INFO: common: created directory at: artifacts/model_trainer]
+[2025-03-04 20:04:35,099: ERROR: main: ModelTrainerConfig() takes no arguments]
+Traceback (most recent call last):
+  File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/main.py", line 37, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/src/SummarizeWithPegasus/pipeline/model_trainer.py", line 10, in initiate_model_trainer
+    model_trainer_config = config.get_model_trainer_config()
+  File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/src/SummarizeWithPegasus/config/configuration.py", line 48, in get_model_trainer_config
+    model_trainer_config=ModelTrainerConfig(
+TypeError: ModelTrainerConfig() takes no arguments
+[2025-03-04 20:13:38,287: INFO: config: PyTorch version 2.6.0 available.]
+[2025-03-04 20:13:38,466: INFO: main: logging is implemented]
+[2025-03-04 20:13:38,466: INFO: main: stage Data Ingestion Stage started]
+[2025-03-04 20:13:38,467: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-03-04 20:13:38,468: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-04 20:13:38,468: INFO: common: created directory at: artifacts]
+[2025-03-04 20:13:38,468: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-04 20:13:38,468: INFO: data_ingestion: File already exits]
+[2025-03-04 20:13:38,524: INFO: main: stage Data Ingestion Stage finished]
+[2025-03-04 20:13:38,524: INFO: main: stage Data Transformation Stage started]
+[2025-03-04 20:13:38,525: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-03-04 20:13:38,526: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-04 20:13:38,526: INFO: common: created directory at: artifacts]
+[2025-03-04 20:13:38,526: INFO: common: created directory at: artifacts/data_transformation]
+[2025-03-04 20:13:39,096: INFO: main: stage Data Transformation Stage finished]
+[2025-03-04 20:13:39,097: INFO: main: stage Model Training Stage started]
+[2025-03-04 20:13:39,097: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-03-04 20:13:39,098: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-04 20:13:39,098: INFO: common: created directory at: artifacts]
+[2025-03-04 20:13:39,098: INFO: common: created directory at: artifacts/model_trainer]
+[2025-03-04 20:13:39,098: ERROR: main: ModelTrainerConfig() takes no arguments]
+Traceback (most recent call last):
+  File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/main.py", line 37, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/src/SummarizeWithPegasus/pipeline/model_trainer.py", line 10, in initiate_model_trainer
+    model_trainer_config = config.get_model_trainer_config()
+  File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/src/SummarizeWithPegasus/config/configuration.py", line 48, in get_model_trainer_config
+    model_trainer_config=ModelTrainerConfig(
+TypeError: ModelTrainerConfig() takes no arguments
+[2025-03-04 20:31:09,604: INFO: config: PyTorch version 2.6.0 available.]
+[2025-03-04 20:31:09,791: INFO: main: logging is implemented]
+[2025-03-04 20:31:09,791: INFO: main: stage Data Ingestion Stage started]
+[2025-03-04 20:31:09,792: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-03-04 20:31:09,793: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-04 20:31:09,793: INFO: common: created directory at: artifacts]
+[2025-03-04 20:31:09,793: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-04 20:31:09,793: INFO: data_ingestion: File already exits]
+[2025-03-04 20:31:09,851: INFO: main: stage Data Ingestion Stage finished]
+[2025-03-04 20:31:09,851: INFO: main: stage Data Transformation Stage started]
+[2025-03-04 20:31:09,851: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-03-04 20:31:09,852: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-04 20:31:09,852: INFO: common: created directory at: artifacts]
+[2025-03-04 20:31:09,852: INFO: common: created directory at: artifacts/data_transformation]
+[2025-03-04 20:31:10,440: INFO: main: stage Data Transformation Stage finished]
+[2025-03-04 20:31:10,440: INFO: main: stage Model Training Stage started]
+[2025-03-04 20:31:10,441: INFO: common: yaml file: config/config.yaml loaded successfully]
+[2025-03-04 20:31:10,442: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-04 20:31:10,442: INFO: common: created directory at: artifacts]
+[2025-03-04 20:31:10,442: INFO: common: created directory at: artifacts/model_trainer]
+[2025-03-04 20:34:50,039: ERROR: main: MPS backend out of memory (MPS allocated: 7.45 GB, other allocations: 10.32 GB, max allowed: 18.13 GB). Tried to allocate 375.40 MB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).]
+Traceback (most recent call last):
+  File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/main.py", line 37, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/src/SummarizeWithPegasus/pipeline/model_trainer.py", line 12, in initiate_model_trainer
+    model_trainer_config.train()
+  File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/src/SummarizeWithPegasus/components/model_trainer.py", line 34, in train
+    trainer.train()
+  File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2241, in train
+    return inner_training_loop(
+  File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/venv/lib/python3.10/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/venv/lib/python3.10/site-packages/transformers/trainer.py", line 3740, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/venv/lib/python3.10/site-packages/accelerate/accelerator.py", line 2329, in backward
+    loss.backward(**kwargs)
+  File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/venv/lib/python3.10/site-packages/torch/_tensor.py", line 626, in backward
+    torch.autograd.backward(
+  File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/venv/lib/python3.10/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/Users/tudi/Documents/portfolio_projects/SummarizeWithPegasus/venv/lib/python3.10/site-packages/torch/autograd/graph.py", line 823, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: MPS backend out of memory (MPS allocated: 7.45 GB, other allocations: 10.32 GB, max allowed: 18.13 GB). Tried to allocate 375.40 MB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
